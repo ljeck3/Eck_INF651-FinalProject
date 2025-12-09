@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compose</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compose a Message</h1>
+
+    <div class="fillout">
+        <form method="POST">
+            <label for="content">Name</label>
+            <textarea id="nameInput" name="nameInput" required="required" rows="2" cols="30"></textarea><br>
+
+            <label for="content">Share a message with us!</label>
+            <textarea id="messageInput" name="messageInput" required="required" rows="4" cols="30"></textarea><br>
+
+            <button id="compose-submit" class="form-buttons" type="button">Submit</button>
+            <button class="form-buttons"type="button" onclick="resetForm()">Reset Form</button>
+        </form>
+    </div>
+
+    <p id="submitResponse"></p>
+    <script type="module" src="../js/guestbook.js"></script>
+</body>
+</html>
