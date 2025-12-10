@@ -7,10 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 		<style>
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+			main {
+				height: 55vh;
+            	width: 100%;
+			}
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+			}
     	</style>
 	</head>
 	<body>
@@ -45,12 +49,9 @@
 			<a href="mailto:ecklawncare@gmail.com">ecklawncare@gmail.com</a><br>
 			<a href="services.html#section1">Watch Grass Grow!</a>	
 		</footer>
-
+		
+		<script src="../js/main.js"></script>
 		<script type="module" src="../js/guestbook.js"></script>
-		<script>
-			const year = new Date().getFullYear();
-			const copyrightMessage = `© ${year} Levi Eck`;
-			document.getElementById("footer-copyright").textContent = copyrightMessage;
-		</script>
+		
 	</body>
 </html>

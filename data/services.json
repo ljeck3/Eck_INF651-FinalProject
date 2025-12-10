@@ -4,41 +4,41 @@
   	"image": "../images/services_mower.webp",
     "service": "Mowing",
     "price": 40,
-    "description": "test"
+    "description": "Includes mowing, edging/trimming, and debris cleanup."
   },
   {
     "id": 2,
   	"image": "../images/services_weeds.png",
     "service": "Weeds",
     "price": 20,
-    "description": "test"
+    "description": "Weeds are annoying. They keep your flower beds from looking their best. Sit back and relax and let us handle the rest."
   },
   {
     "id": 3,
   	"image": "../images/services_dog.png",
     "service": "Dog Poop Removal",
     "price": 10,
-    "description": "test"
+    "description": "We handle the crappy jobs too!"
   },
   {
     "id": 4,
   	"image": "../images/services_fertilization.jpg",
     "service": "Fertilization",
     "price": 20,
-    "description": "test"
+    "description": "Keep your lawn healthy!"
   },
   {
     "id": 5,
   	"image": "../images/services_mulching.jpg",
     "service": "Mulching",
     "price": 20,
-    "description": "test"
+    "description": "Make your flower beds pop!"
   },
   {
    "id": 6,
   	"image": "../images/services_seasonal.jpg",
     "service": "Seasonal Cleanups",
     "price": 50,
-    "description": "test"
+    "description": "We'll get you lawn cleaned up and ready for the next season!"
   }
 ]
