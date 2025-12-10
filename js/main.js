@@ -15,6 +15,7 @@ function getWelcomeMessage() {
     console.log(welcomeMessage);
     document.getElementById("time-welcome").textContent = welcomeMessage;
 }
+
 //Footer copyright---------------------
 const year = new Date().getFullYear();
 const copyrightMessage = `© ${year} Levi Eck`;

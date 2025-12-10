@@ -28,44 +28,55 @@
 		</header>
 		<main>
 			<h1>Services</h1>
-			<div class="images1">
-				<div class="service-mowing">
+			
+			<select id="sortSelect">
+				<option value="" disabled selected hidden>Sort</option>
+				<option value="name">Sort by Name</option>
+				<option value="price">Sort by Price</option>
+			</select>
+
+			<div id="service-list" class="images1">
+				
+			</div>
+
+			<!-- <div class="images1">
+				<div class="service" data-name="Mowing" data-price="40">
 					<img src="../images/services_mower.webp" alt="mower" class="s-image-1">
 					<h2>Mowing</h2>
 					<p>Starting at $40</p>
 					<p>Includes mowing, edging/trimming, and debris cleanup</p>
 				</div>
-				<div class="service-weeds">
+				<div class="service" data-name="Weeds" data-price="20">
 					<img src="../images/services_weeds.png" alt="weeds" class="s-image-2">
 					<h2>Weeds</h2>
 					<p>Starting at $20/hour</p>
 					<p>Weeds are annoying. They keep your flower beds from looking their best. Sit back and relax and let us handle the rest.</p>
 				</div>
-				<div class="service-dog">
+				<div class="service" data-name="Dog Poop Removal" data-price="20">
 					<img src="../images/services_dog.png" alt="dog" class="s-image-3">
 					<h2>Dog Poop Removal</h2>
 					<p>$10</p>
 					<p>We handle the crappy jobs too!</p>
 				</div>
-				<div class="service-fertilization">
+				<div class="service" data-name="Fertilization" data-price="15">
 					<img src="../images/services_fertilization.jpg" alt="fertilize" class="s-image-3">
 					<h2>Fertilization</h2>
-					<p>Starting at $20/hour</p>
+					<p>Starting at $15/hour</p>
 					<p>We fertilize!</p>
 				</div>
-				<div class="service-mulching">
+				<div class="service" data-name="Mulching" data-price="20">
 					<img src="../images/services_mulching.jpg" alt="mulch" class="s-image-3">
 					<h2>Mulching</h2>
 					<p>Starting at $20/hour</p>
 					<p>Mulch is a great addition to your flower bed!</p>
 				</div>
-				<div class="service-seasonal">
+				<div class="service" data-name="Seasonal Cleanups" data-price="50">
 					<img src="../images/services_seasonal.jpg" alt="leaves" class="s-image-3">
 					<h2>Seasonal Cleanups</h2>
-					<p>Starting at $20/hour</p>
+					<p>Starting at $50</p>
 					<p>Fall cleanup!</p>
 				</div>
-			</div>
+			</div> -->
 			
 			<br>
 			<div class="payment">
@@ -85,5 +96,6 @@
 		</footer>
 
 		<script src="../js/main.js"></script>
+		<script src="../js/services.js"></script>
 	</body>
 </html>

@@ -1,0 +1,44 @@
+[
+  {
+  	"id": 1,
+  	"image": "../images/services_mower.webp",
+    "service": "Mowing",
+    "price": 40,
+    "description": "test"
+  },
+  {
+    "id": 2,
+  	"image": "../images/services_weeds.png",
+    "service": "Weeds",
+    "price": 20,
+    "description": "test"
+  },
+  {
+    "id": 3,
+  	"image": "../images/services_dog.png",
+    "service": "Dog Poop Removal",
+    "price": 10,
+    "description": "test"
+  },
+  {
+    "id": 4,
+  	"image": "../images/services_ferilization.jpg",
+    "service": "Fertilization",
+    "price": 20,
+    "description": "test"
+  },
+  {
+    "id": 5,
+  	"image": "../images/services_mulching.jpg",
+    "service": "mulching",
+    "price": 20,
+    "description": "test"
+  },
+  {
+   "id": 6,
+  	"image": "../images/services_seasonal.jpg",
+    "service": "Seasonal Cleanups",
+    "price": 50,
+    "description": "test"
+  }
+]
