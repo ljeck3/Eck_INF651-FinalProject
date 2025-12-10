@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-  	"image": "../images/services_ferilization.jpg",
+  	"image": "../images/services_fertilization.jpg",
     "service": "Fertilization",
     "price": 20,
     "description": "test"
@@ -30,7 +30,7 @@
   {
     "id": 5,
   	"image": "../images/services_mulching.jpg",
-    "service": "mulching",
+    "service": "Mulching",
     "price": 20,
     "description": "test"
   },
