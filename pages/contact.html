@@ -7,12 +7,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 		<style>
+		form {
+			width: 400px;
+			margin: 0 auto;
+				}
+		label {
+			display: block;
+			 }
+		
+		input[type="textbox"],
+		input[type="email"],
+		input[type="tel"],
+			textarea {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			padding: 10px;
+				}
+
+	
+		input[type="submit"]{
+			width: 100px;
+			height: 37px;
+			background-color: #00A651;
+			color: #FFFFFF;
+			border: none;
+				}
+
+		input[type="submit"]:hover {
+			transform: scale(1.1);
+			transition: transform .25s ease;
+				}
 		</style>
 	</head>
 	<body>
 		<header>
 			<div id="logobox">
-				<a href="index.html"><img src="../images/logo.png" alt="Logo" class="logo"></a>
+				<a href="../index.html"><img src="../images/logo.png" alt="Logo" class="logo"></a>
 			</div>
 			<div id="navigation">
 				<ul>
@@ -26,7 +59,25 @@
 			</div>
 		</header>
 		<main>
+			<h1>Contact Us Today!</h1>
+			<p>Required fields are marked with an asterisk *</p>
 			
+			<form method="post" action="">
+			<label for="myFName">*First Name:</label>
+				<input type="textbox" id="myFName" name="myFName" required="required"><br>
+			<label for="myLName">*Last Name:</label>
+				<input type="textbox" id="myLName" name="myLName" required="required"><br>
+			<label for="myEmail">*E-Mail:</label>
+				<input type="email" id="myEmail" name="myEmail" required="required"><br>
+			<label for="myPhone">Phone:</label>
+				<input type="tel" id="myPhone" name="myPhone" maxlength="12"><br>
+		
+			<label for="myComments">What can we do for you?:</label>
+				<textarea id="myComments" name="myComments" required="required" rows="4" cols="30"></textarea><br>
+			
+			<input type="submit" value="Submit">
+			</form>
+			<br>
 		</main>
 		<footer>
 			<p id="footer-copyright"></p>	

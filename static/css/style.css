@@ -153,6 +153,24 @@ input[type="submit"]:hover {
 }
 
 
+/*About-------------*/
+.about-paragraph {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin: 10px;
+	place-items: center;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+  }
+  
+.about-section img {
+	width: 70%;
+    height: auto; 
+	}
+
+
 
 /* FOOTER -----------------------*/	
 footer {
