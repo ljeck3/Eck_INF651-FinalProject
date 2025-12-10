@@ -27,23 +27,14 @@
 		</header>
 		<main>
 			<h1>About</h1>
-			<div class="about-paragraph">
-				<div class="about-section">
-					<p>Eck Lawn Care has been serving the Wichita area since 2020. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nulla magnam eius unde architecto accusantium repudiandae dolor vero nobis amet exercitationem sapiente ex, tempore voluptas non modi molestiae minus natus.
-					</p>
-				</div>
-				<div class="about-section"><img src="/images/equipment.jpeg"></div>
-				<div class="about-section"><img src="/images/equipment.jpeg"></div>
-				<div class="about-section">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vel, perspiciatis excepturi incidunt libero, reprehenderit qui odio fugit consequatur placeat perferendis? Modi, exercitationem! Quam, placeat? Recusandae quam natus corrupti accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus eius rerum ducimus quos iste facilis, ad maiores dolorum dolores, laboriosam, cum enim culpa! Eos perspiciatis libero optio saepe praesentium?
-					</p>
-				</div>
-			<div class="about-section">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vel, perspiciatis excepturi incidunt libero, reprehenderit qui odio fugit consequatur placeat perferendis? Modi, exercitationem! Quam, placeat? Recusandae quam natus corrupti accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatibus eius rerum ducimus quos iste facilis, ad maiores dolorum dolores, laboriosam, cum enim culpa! Eos perspiciatis libero optio saepe praesentium?
-					</p>
-				</div>
-			<div class="about-section"><img src="/images/equipment.jpeg"></div>
+			<div class="info">
+				<p>
+					Eck Lawn Care has served the Wichita are since 2020. We strive to make your lawn look the best it can, while offering friendly service.
+				</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem vel possimus aliquam magnam maxime, unde, sit pariatur laboriosam inventore iure expedita aliquid aperiam distinctio. Ad consequuntur dolorem tempore iste nostrum.</p>
 			</div>
+			<br>
+			<img id="slide" src="img1.jpg" alt="slideshow image">
 		<footer>
 			<p id="footer-copyright"></p>	
 			<a href="mailto:ecklawncare@gmail.com">ecklawncare@gmail.com</a><br>
@@ -51,5 +42,24 @@
 		</footer>
 
 		<script src="../js/main.js"></script>
+		<script>
+			let i = 0; 
+			const images = [
+			"../images/slide1.jpeg",
+			"../images/slide2.jpeg",
+			"../images/slide3.jpeg"
+			];
+			const time = 3000;
+
+			function changeImg() {
+			document.getElementById("slide").src = images[i];
+
+			i = (i + 1) % images.length;
+			setTimeout(changeImg, time);
+			}
+
+			window.onload = changeImg;
+
+		</script>
 	</body>
 </html>

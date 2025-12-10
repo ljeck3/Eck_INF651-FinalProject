@@ -75,8 +75,12 @@
 			<label for="myComments">What can we do for you?:</label>
 				<textarea id="myComments" name="myComments" required="required" rows="4" cols="30"></textarea><br>
 			
-			<input type="submit" value="Submit">
+			<button class="form-buttons"type="button" onclick="validateForm()">Submit</button>
 			</form>
+			<div id="form-response">
+			<p>Thank you for contacting us! We will be in touch!</p>
+			<p>Please allow up to 3-5 business days for a response.</p>
+			</div>
 			<br>
 		</main>
 		<footer>
@@ -86,5 +90,18 @@
 		</footer>
 		
 		<script src="../js/main.js"></script>
+		<script>
+			function validateForm() {
+				const firstName = document.getElementById("myFName").value;
+				const lastName = document.getElementById("myLName").value;
+				const email = document.getElementById("myEmail").value;
+			
+				if (!firstName || !lastName || !email) {
+					alert("Fill out the required fields.");
+					return;
+				} 
+				document.getElementById("form-response").style.display = "block";
+			}
+		</script>
 	</body>
 </html>

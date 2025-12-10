@@ -15,7 +15,7 @@ body {
 	border-radius: 10px;
 }
 
-#homehero img {
+#homehero img, #slide {
 	border-radius: 10px;
   	box-shadow: 5px 5px 5px rgb(206, 206, 206);
 }
@@ -64,8 +64,8 @@ body {
 }
 /* MAIN -----------------------*/
 main {
-	text-align: center;
 	font-family: helvetica;
+	text-align: center;
 }
 /* PHOTO GRID -----------------------*/	
 .photo-gallery {
@@ -111,7 +111,7 @@ main {
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgb(86, 86, 86);
 	}
-/*Reviews Styling----------*/
+/*REVIEWS STYLING----------*/
 form {
 	width: 400px;
 	margin: 0 auto;
@@ -152,27 +152,30 @@ input[type="submit"]:hover {
 	justify-content: center;
 }
 
+/*ABOUT-------------*/
+#slide {
+	height: 500px;
+	width: auto;
+}
 
-/*About-------------*/
-.about-paragraph {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 7px;
-    margin: 10px;
-	place-items: center;
-	text-align: center;
-	padding-left: 20%;
-	padding-right: 20%;
-  }
-  
-.about-section img {
-	width: 70%;
-    height: auto; 
-	}
-
+.info {
+    text-align: center;
+	max-height: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(206, 206, 206);
+    padding: 20px;
+    background-color: white;
+}
 
 
-/* FOOTER -----------------------*/	
+/*CONTACT------------------------*/
+#form-response {
+	display: none;;
+}
+
+/*FOOTER -----------------------*/	
 footer {
 	background-color: #00A651;
 	color: white;
