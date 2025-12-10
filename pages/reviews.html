@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang= "en">
 	<head>
-		<title>Reviews</title>
+		<title>Eck Lawn Care - Reviews</title>
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,5 +47,10 @@
 		</footer>
 
 		<script type="module" src="../js/guestbook.js"></script>
+		<script>
+			const year = new Date().getFullYear();
+			const copyrightMessage = `© ${year} Levi Eck`;
+			document.getElementById("footer-copyright").textContent = copyrightMessage;
+		</script>
 	</body>
 </html>

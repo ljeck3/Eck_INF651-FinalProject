@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const services = await getServices();
   renderServices(services);
+
+//Sorts based on dropdown selectoin
+  const dropdown = document.getElementById("sortSelect");
+  dropdown.addEventListener("change", () => {
+    const sortType = dropdown.value;
+    if (sortType === "name") {
+      services.sort((a, b) => a.service.localeCompare(b.service));
+    } else if (sortType === "price") {
+      services.sort((a, b) => Number(a.price) - Number(b.price));
+    }
+    renderServices(services);
+  });
 });
 
 //Get from json

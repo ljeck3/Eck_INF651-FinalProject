@@ -2,7 +2,7 @@
 function getWelcomeMessage() {
     const hour = new Date().getHours();
     let welcomeMessage = "Welcome!";
-    console.log(hour);
+    console.log(`Hour: ${hour}`);
 
     if (hour < 12) {
         welcomeMessage = "Good Morning!";
@@ -12,7 +12,7 @@ function getWelcomeMessage() {
         welcomeMessage = "Good Evening!";
     }
 
-    console.log(welcomeMessage);
+    console.log(`Response: ${welcomeMessage}`);
     document.getElementById("time-welcome").textContent = welcomeMessage;
 }
 
