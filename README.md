@@ -19,6 +19,7 @@ Levi Eck
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
+* [Ramsey Muvva - Book Rental Demonstration](https://github.com/ramseyFHSU/INF651_2025/tree/main/BookRental)
 * [Traversey Media](https://www.youtube.com/watch?v=4YQ4svkETS0)
 * ChatGPT for troubleshooting
 
